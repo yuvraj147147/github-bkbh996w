@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  .border-gradient {
+    border-image: linear-gradient(to right, #8B0000, #00008B) 1;
+  }
+}
+
+@layer utilities {
+  .transition-colors {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
